@@ -1,1 +1,5 @@
+# VS Code extension artifacts
+*.vsix
+out/
+.vscode-test/
 .DS_Store
