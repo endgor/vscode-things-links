@@ -1,22 +1,47 @@
 {
-  "name": "things-links-ender",
+  "name": "things-links",
   "displayName": "Things Links",
-  "description": "Open things:// URLs in Things 3",
-  "version": "0.0.5",
-  "publisher": "ender-local",
+  "description": "Open things:// URLs in Things from VS Code",
+  "version": "1.0.0",
+  "publisher": "endgor",
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/endgor/vscode-things-links.git"
+  },
+  "homepage": "https://github.com/endgor/vscode-things-links#readme",
+  "bugs": {
+    "url": "https://github.com/endgor/vscode-things-links/issues"
+  },
   "engines": {
     "vscode": "^1.60.0"
   },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "things",
+    "things3",
+    "things.app",
+    "culturedcode",
+    "todo",
+    "tasks",
+    "productivity",
+    "markdown",
+    "links"
+  ],
   "activationEvents": [
     "onCommand:things.openUrl",
     "onLanguage:markdown"
   ],
-  "main": "./extension.js",
+  "main": "./src/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "things.openUrl",
-        "title": "Things: Open URL under Cursor"
+        "title": "Things: Open URL under Cursor",
+        "category": "Things"
       }
     ],
     "keybindings": [
