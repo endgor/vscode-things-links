@@ -1,0 +1,30 @@
+{
+  "name": "things-links-ender",
+  "displayName": "Things Links",
+  "description": "Open things:// URLs in Things 3",
+  "version": "0.0.5",
+  "publisher": "ender-local",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "activationEvents": [
+    "onCommand:things.openUrl",
+    "onLanguage:markdown"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "things.openUrl",
+        "title": "Things: Open URL under Cursor"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "things.openUrl",
+        "key": "cmd+shift+t",
+        "when": "editorTextFocus"
+      }
+    ]
+  }
+}
